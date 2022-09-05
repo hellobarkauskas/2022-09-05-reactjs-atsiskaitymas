@@ -36,10 +36,8 @@ function RegisterForm() {
                 <button type="submit" onClick={event => RegisterUser(event)}>Register</button>
             </form>
         </div>
-
     )
 
-    
 }
 
 export default RegisterForm;

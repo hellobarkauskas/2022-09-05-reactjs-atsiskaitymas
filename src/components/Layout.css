@@ -1,0 +1,45 @@
+.main-page {
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.main-page a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+
+.main-page img {
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.home-page {
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.home-page a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+
+.home-page img {
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}

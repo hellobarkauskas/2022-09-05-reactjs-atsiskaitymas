@@ -1,11 +1,18 @@
 .login-form {
     display: flex;
+    justify-content: center;
+}
+
+.login-form-style {
+    background-color: darkolivegreen;
+    display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: 300px;
+    padding: 20px;
+    color: white;
 }
 
 .login-form input {
@@ -14,11 +21,19 @@
 
 .register-form {
     display: flex;
+    justify-content: center;
+}
+
+.register-form-style {
+    background-color: darkolivegreen;
+    display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    padding: 20px;
+    color: white;
 }
 
 .register-form input {
@@ -27,11 +42,19 @@
 
 .skills-form {
     display: flex;
+    justify-content: center;
+}
+
+.skills-form-style {
+    background-color: darkolivegreen;
+    display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    padding: 20px;
+    color: white;
 }
 
 .skills-form input {

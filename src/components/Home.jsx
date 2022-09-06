@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import HomeLayout from "./HomeLayout";
 
 function FetchSkills() {
     const [data, setData] = useState();
@@ -10,26 +11,27 @@ function FetchSkills() {
 
         .then(response => response.json())
         .then(response => {setData(response)})
-        .catch(error => console.log(error));
+        .catch(error => console.log(error))
         
     }, []);
 
     return (
-       
-        <div className="skills-container">
-            { data && data.map((skill) => {
-                 return (
-                    <div className="skill" key={skill.id}>
-                        <p>Home</p>
-                        <p>{skill.title}</p>
-                        <p>{skill.description}</p>
-                    </div>
+        <div>
+            <HomeLayout />
+
+            <h2>Home page</h2>
+            <div className="skills-container">
+                { data && data.map((skill) => {
+                    return (
+                        <div className="skill" key={skill.id}>
+                            <p>{skill.title}</p>
+                            <p>{skill.description}</p>
+                        </div>
                     )
                 })}
-        </div> 
+            </div>
+        </div>
     )
-
-
 }
 
 export default FetchSkills;

@@ -30,12 +30,14 @@ function PostSkills() {
             <HomeLayout />
 
             <form className="skills-form">
-                <h2>Add skills page</h2>
-                <label for='title'>Title</label>
-                <input type="text" name="title" id="title" value={title} onChange={event => setTitle(event.target.value)} />
-                <label for='description'>Description</label>
-                <input type="text" name="description" id="description" value={description} onChange={event => setDescription(event.target.value)} />
-                <button type="submit" onClick={event => addSkill(event)}>Add Skill</button>
+                <div className="skills-form-style">
+                    <h2>Add new skill</h2>
+                    <label for='title'>Title</label>
+                    <input type="text" name="title" id="title" value={title} onChange={event => setTitle(event.target.value)} />
+                    <label for='description'>Description</label>
+                    <input type="text" name="description" id="description" value={description} onChange={event => setDescription(event.target.value)} />
+                    <button type="submit" onClick={event => addSkill(event)}>Add Skill</button>
+                </div>
             </form>
         </div>
     )

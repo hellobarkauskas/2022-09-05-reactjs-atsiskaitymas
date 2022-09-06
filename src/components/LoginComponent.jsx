@@ -32,12 +32,14 @@ function LoginForm() {
             <MainLayout />
 
             <form className="login-form">
-                <h2>Login page</h2>
-                <label for='email'>Email</label>
-                <input type="text" name="email" id="email" value={email} onChange={event => setEmail(event.target.value)}/>
-                <label for='password'>Password</label>
-                <input type="text" name="password" id="password" value={password} onChange={event => setPassword(event.target.value)}/>
-                <button type="submit" onClick={event => userLogin(event)}>Login</button>
+                <div className="login-form-style">
+                    <h2>Login page</h2>
+                    <label for='email'>Email</label>
+                    <input type="text" name="email" id="email" value={email} onChange={event => setEmail(event.target.value)}/>
+                    <label for='password'>Password</label>
+                    <input type="text" name="password" id="password" value={password} onChange={event => setPassword(event.target.value)}/>
+                    <button type="submit" onClick={event => userLogin(event)}>Login</button>
+                </div>
             </form>  
         </div>
     )

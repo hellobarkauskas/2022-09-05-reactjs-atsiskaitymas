@@ -1,4 +1,6 @@
 import { useState } from "react"
+import MainLayout from "./MainLayout";
+import './FormStyle.css';
 
 function RegisterForm() {
     const [email, setEmail] = useState('');
@@ -23,12 +25,14 @@ function RegisterForm() {
         .catch(error => console.log(error))
         setEmail('');
         setPassword('');
-        
     }
 
     return (
         <div>
-            <form>
+            <MainLayout />
+
+            <form className="register-form">
+                <h2>Register page</h2>
                 <label for='email'>Email</label>
                 <input type="text" name='email' id="email" value={email} onChange={event => setEmail(event.target.value)} />
                 <label for='password'>Password</label>
@@ -37,7 +41,6 @@ function RegisterForm() {
             </form>
         </div>
     )
-
 }
 
 export default RegisterForm;

@@ -1,8 +1,10 @@
 import { useState } from "react";
+import HomeLayout from "./HomeLayout";
+import './FormStyle.css';
 
 function PostSkills() {
     const [title, setTitle] = useState('');
-    const [description, setDescription] = useState();
+    const [description, setDescription] = useState('');
 
     const addSkill = (event) => {
         event.preventDefault();
@@ -25,7 +27,10 @@ function PostSkills() {
 
     return (
         <div>
-            <form>
+            <HomeLayout />
+
+            <form className="skills-form">
+                <h2>Add skills page</h2>
                 <label for='title'>Title</label>
                 <input type="text" name="title" id="title" value={title} onChange={event => setTitle(event.target.value)} />
                 <label for='description'>Description</label>
